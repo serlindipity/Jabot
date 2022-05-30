@@ -1,0 +1,98 @@
+﻿/* CSS File for Java Cafe Website */
+/* IMPORTED FONTS INFORMATIONS -------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Gaegu&family=La+Belle+Aurore&display=swap'); /* Import link for my fonts */
+/* IMPORTED FONT FAMILY NAMES:                                                   
+    font-family: 'Cedarville Cursive', cursive;                                  
+    font-family: 'Gaegu', cursive;
+    font-family: 'La Belle Aurore', cursive; ------------------------------------ */
+
+/* DESIGNING THE WEBPAGE -------------------------------------------------------- */
+/* here I just removed unnecessary margin & padding to all my elements */
+* {
+    box-sizing: border-box; /* border-box makes it much easier to size elements */
+}
+/* design for the body or the whole website */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.imgur.com/rOZAQSd.jpg"), no-repeat center center; /* bg color, bg position, and the link to my bg image */
+    background-size: cover; /* bg image size to cover all screen */
+    margin: 0 auto; /* setting the margin for body */
+    height: 100%; /* setting the height for body */
+    width: 100%; /* setting the width for body */
+    min-height: 100vh; /* setting the min-height for body */
+    display: flex; /* using flex to display the elements in row */
+    flex-direction: column; /* setting the flex-direction to column */
+}
+/* design for the header */
+header {
+    text-align: center; /* aligning the texts center */
+    background-color: rgba(0, 0, 0, 0.5); /* adding transparent bg color */
+    margin: 0; /* setting the margin for header */
+    padding: 20px 0; /* setting the padding for header */
+    height: 10%; /* setting the height for header */
+    width: 100%; /* setting the width for header */
+}
+/* design for the h1 */
+h1 {
+    color: khaki; /* setting font color for h1 */
+    font-size: 70px; /* setting font size color for h1 */
+    font-family: 'La Belle Aurore', cursive; /* using the font family i want from imported fonts */
+    margin: 0em /* setting margin size 0em for h1 to avoid unwanted space */
+}
+/* design for the p in header */
+header p {
+    color: ivory; /* setting font color for p in header */
+    font-size: 35px; /* setting font size for p in header */
+    font-family: 'La Belle Aurore', cursive; /* using the font family i want from imported fonts */
+    line-height: 37px; /* setting line height for p in header */
+    margin: 0em 30px; /* setting margin size (top & bot) 0em to avoid unwanted space */
+}
+/* design for the mainContainer */
+.mainContainer {
+    display: flex; /* using display flex to organize the 2 divs under this container */
+    flex-direction: row; /* setting the flex-direction to row */
+    padding: 50px; /* setting the padding for mainContainer */
+    flex: 1; /* setting flex to 1 so that this div will grow in same proportion as the window-size  */
+}
+/* design for the texts container */
+.texts {
+    flex: 30%; /* setting the flex to 30%. this div will only occupy 30% of the mainContainer */
+    padding: 30px 20px; /* setting the padding for this container */
+}
+/* design for the h2 */
+h2 {
+    color: darkgoldenrod; /* setting font color for h2 */
+    font-size: 100px; /* setting font size color for h2 */
+    font-family: 'La Belle Aurore', cursive; /* using the font family i want from imported fonts */
+    margin: 0em 30px; /* setting margin size 0em for h1 to avoid unwanted space */
+}
+/* design for the p in texts container */
+.texts p {
+    color: ivory; /* setting font color for p in texts container */
+    font-size: 30px; /* setting font size for p in texts container */
+    font-family: 'La Belle Aurore', cursive; /* using the font family i want from imported fonts */
+    line-height: 28px; /* setting line height for p in texts container */
+    margin: 0em 30px; /* setting margin size (top & bot) 0em to avoid unwanted space */
+}
+/* design for the bot container */
+.bot {
+    flex: 70%; /* setting the flex to 70%. this div will occupy the remaining 70% of the mainContainer */
+}
+/* design for my chatbot iframe */
+iframe {
+    height: 400px; /* setting the height for my iframe */
+    width: 100%; /* setting the width for my iframe */
+}
+/* design for my footer */
+footer {
+    color: ivory; /* setting font color for p in footer */
+    font-size: 25px; /* setting font size color for p in footer */
+    text-align: center; /* aligning the texts center */
+    font-family: 'Gaegu', cursive; /* using the font family i want from imported fonts */
+    background-color: rgba(0, 0, 0, 0.5); /* setting bg color for footer */
+    margin: 0; /* setting the margin for footer */
+    padding: 0; /* setting the padding for footer */
+    align-items: center; /* all items will be centered */
+    justify-content: center; /* as well as the contents */
+    min-height: 100%; /* setting the min-height for footer */
+    width: 100%; /* setting the width for footer */
+}

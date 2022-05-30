@@ -1,0 +1,56 @@
+﻿<!-- HTML FILE for Java Cafe Website -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Java Cafe</title> <!-- Page Title -->
+    <link rel="stylesheet" href="StyleSheet.css">  <!-- CSS link -->
+    <link rel="shortcut icon" href="image/javacafeicon.png" type="image/png"> <!-- Page icon -->
+</head>
+<body>
+    <!-- For this website, I wanted the Header to contain the name and a short description of my cafe -->
+    <header>
+        <!-- I used h1 to output the text name of my cafe -->
+        <h1>
+            Java Cafe <!-- Name of my cafe -->
+        </h1>
+
+        <!-- I used p to output the paragraph for my cafe's short description -->
+        <p>
+            Java Cafe is a Coffee Shop located in Abu Dhabi. Our Mission is to provide a friendly, comfortable atmosphere where the  <!--_                              -->
+            customer can receive quality food, service, and entertainment at a reasonable price.                                     <!--_| my cafe's short description -->
+        </p>
+    </header>
+
+    <!-- For the main body of my website, I decided to use a main container to organize my contents -->
+    <div class="mainContainer"> <!-- main container -->
+        <!-- LEFT DIV-->>
+        <!-- I wanted to put the name of my chatbot and it's short description to the body as a text so I created this container-->
+        <div class="texts"> <!-- text container -->
+            <!-- I used h1 to output the text name of my chatbot -->
+            <h2>
+                Jabot <!-- Name of my chatbot -->
+            </h2>
+
+            <!-- I used p to output the paragraph for my chatbot's short description -->
+            <p>
+                Jabot is our new Assistant Bot. He can help you with your orders and reservations. Try him out! <!-- my chatbot's short description -->
+            </p>
+        </div>
+
+        <!-- RIGHT DIV-->>
+        <!-- The next div is for containg & outputing my chatbot from dialogflow to this website-->
+        <div class="bot"> <!-- bot container -->
+            <iframe allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/3578a419-b599-49b7-80de-d227576a9696"></iframe> <!-- iframe link of my chatbot from dialogflow -->
+        </div>
+    </div>
+
+    <!-- Lastly, I created a footer to display my copyright text -->
+    <footer>
+        <!-- I used p to output the paragraph for my cafe's copyright text -->
+        <p>
+            All rights reserve. Java Cafe. 2022 <!-- my cafe's copyright text -->
+        </p>
+    </footer>
+</body>
+</html>
